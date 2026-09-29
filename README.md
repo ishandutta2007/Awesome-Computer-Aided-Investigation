@@ -62,7 +62,7 @@ Welcome to the definitive guide for **Computer-Aided Investigation (CAI)** softw
 
 Below is a curated list of top-tier open-source computer-aided investigation, DFIR, and OSINT projects sorted by GitHub star popularity ⭐.
 
-| Repository 📦 | GitHub Stars 🌟 | Description & Ecosystem Role ℹ️ |
+| Repository 📦 | GitHub_Stars 🌟 | Description & Ecosystem Role ℹ️ |
 | :--- | :--- | :--- |
 | **[sherlock-project/sherlock](https://github.com/sherlock-project/sherlock)** | <a href="https://github.com/sherlock-project/sherlock/stargazers"><img src="https://img.shields.io/github/stars/sherlock-project/sherlock?style=social&color=white" alt="Stars"/></a> | Hunt down social media accounts by username across 400+ social networks for OSINT investigations. |
 | **[osquery/osquery](https://github.com/osquery/osquery)** | <a href="https://github.com/osquery/osquery/stargazers"><img src="https://img.shields.io/github/stars/osquery/osquery?style=social&color=white" alt="Stars"/></a> | SQL-based operating system instrumentation, monitoring, and live forensic investigation framework. |
