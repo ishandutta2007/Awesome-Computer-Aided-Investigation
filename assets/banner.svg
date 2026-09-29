@@ -17,14 +17,12 @@
   </defs>
 
   <style>
-    .title { font-family: system-ui, -apple-system, sans-serif; font-weight: 800; font-size: 42px; fill: url(#text-grad); }
-    .subtitle { font-family: system-ui, -apple-system, sans-serif; font-weight: 400; font-size: 20px; fill: #94a3b8; }
-    .badge-text { font-family: system-ui, -apple-system, sans-serif; font-weight: 600; font-size: 14px; fill: #e2e8f0; }
+    .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; font-size: 38px; fill: url(#text-grad); }
+    .subtitle { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-size: 18px; fill: #94a3b8; }
+    .badge-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 13px; fill: #e2e8f0; }
     
-    /* Dynamic background animations placed safely in background layer */
     .bg-node { animation: float 6s ease-in-out infinite alternate; }
     .bg-line { stroke-dasharray: 8 8; animation: dash 20s linear infinite; }
-    .pulse-circle { animation: pulse 3s ease-in-out infinite; }
     
     @keyframes float {
       0% { transform: translateY(0px); }
@@ -33,17 +31,13 @@
     @keyframes dash {
       to { stroke-dashoffset: -100; }
     }
-    @keyframes pulse {
-      0%, 100% { opacity: 0.2; transform: scale(1); }
-      50% { opacity: 0.6; transform: scale(1.08); }
-    }
   </style>
 
   <!-- Background -->
   <rect width="1200" height="300" fill="url(#bg)" rx="16"/>
   <rect width="1200" height="300" fill="url(#glow)"/>
 
-  <!-- Dynamic / Animated Background Graphics Layer (Behind Text) -->
+  <!-- Dynamic / Animated Background Graphics Layer -->
   <g opacity="0.25">
     <line x1="100" y1="50" x2="300" y2="250" stroke="#38bdf8" stroke-width="1.5" class="bg-line"/>
     <line x1="300" y1="250" x2="600" y2="80" stroke="#818cf8" stroke-width="1.5" class="bg-line"/>
@@ -57,7 +51,7 @@
     <circle cx="1100" cy="60" r="8" fill="#818cf8" class="bg-node"/>
   </g>
 
-  <!-- Foreground Content Layer (Text & Labels ALWAYS on Top) -->
+  <!-- Foreground Content Layer -->
   <g transform="translate(60, 110)">
     <!-- Icon/Graphic -->
     <g transform="translate(0, -25)">
@@ -68,21 +62,21 @@
 
     <!-- Main Title & Subtitle -->
     <text x="84" y="15" class="title">Awesome Computer-Aided Investigation</text>
-    <text x="84" y="48" class="subtitle">Curated SaaS Platforms, DFIR Tools, OSINT & Investigative Intelligence Solutions</text>
+    <text x="84" y="48" class="subtitle">Curated SaaS Platforms, DFIR Tools, OSINT &amp; Investigative Intelligence Solutions</text>
 
     <!-- Feature Tags / Pills (Foreground) -->
     <g transform="translate(84, 75)">
-      <rect x="0" y="0" width="160" height="28" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
-      <text x="80" y="18" text-anchor="middle" class="badge-text">🔍 Case Management</text>
+      <rect x="0" y="0" width="150" height="28" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+      <text x="75" y="19" text-anchor="middle" class="badge-text">Case Management</text>
 
-      <rect x="175" y="0" width="140" height="28" rx="14" fill="#1e293b" stroke="#818cf8" stroke-width="1"/>
-      <text x="245" y="18" text-anchor="middle" class="badge-text">🔗 Link Analysis</text>
+      <rect x="165" y="0" width="130" height="28" rx="14" fill="#1e293b" stroke="#818cf8" stroke-width="1"/>
+      <text x="230" y="19" text-anchor="middle" class="badge-text">Link Analysis</text>
 
-      <rect x="330" y="0" width="150" height="28" rx="14" fill="#1e293b" stroke="#c084fc" stroke-width="1"/>
-      <text x="405" y="18" text-anchor="middle" class="badge-text">💻 Digital Forensics</text>
+      <rect x="310" y="0" width="145" height="28" rx="14" fill="#1e293b" stroke="#c084fc" stroke-width="1"/>
+      <text x="382" y="19" text-anchor="middle" class="badge-text">Digital Forensics</text>
 
-      <rect x="495" y="0" width="120" height="28" rx="14" fill="#1e293b" stroke="#34d399" stroke-width="1"/>
-      <text x="555" y="18" text-anchor="middle" class="badge-text">🌐 OSINT</text>
+      <rect x="470" y="0" width="100" height="28" rx="14" fill="#1e293b" stroke="#34d399" stroke-width="1"/>
+      <text x="520" y="19" text-anchor="middle" class="badge-text">OSINT Stacks</text>
     </g>
   </g>
 </svg>
